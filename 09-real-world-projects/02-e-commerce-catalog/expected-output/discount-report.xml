@@ -1,0 +1,5 @@
+<discounted-product sku="bk-101">
+  <name>Learning XML</name>
+  <list-price>44.99</list-price>
+  <current-price>39.99</current-price>
+</discounted-product>

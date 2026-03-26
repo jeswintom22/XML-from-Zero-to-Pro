@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog generated-on="2026-03-10">
+  <metadata>
+    <store-name>Northwind Market</store-name>
+    <default-currency>USD</default-currency>
+  </metadata>
+  <categories>
+    <category id="cat-books">Books</category>
+    <category id="cat-electronics">Electronics</category>
+    <category id="cat-office">Office</category>
+    <category id="cat-home">Home</category>
+  </categories>
+  <brands>
+    <brand id="br-aurora">Aurora Press</brand>
+    <brand id="br-sonic">Sonic Labs</brand>
+    <brand id="br-workflow">Workflow Works</brand>
+    <brand id="br-plainspace">PlainSpace Home</brand>
+  </brands>
+  <products>
+    <product sku="bk-101" category-ref="cat-books" brand-ref="br-aurora" status="active">
+      <name>Learning XML</name>
+      <short-description>Beginner-friendly XML guide.</short-description>
+      <pricing>
+        <list>44.99</list>
+        <current>39.99</current>
+        <currency>USD</currency>
+      </pricing>
+      <inventory>
+        <stock>120</stock>
+        <warehouse>BLR-1</warehouse>
+      </inventory>
+      <rating>4.6</rating>
+      <variants>
+        <variant code="bk-101-pb">
+          <format>Paperback</format>
+          <stock>80</stock>
+        </variant>
+        <variant code="bk-101-eb">
+          <format>Ebook</format>
+          <stock>999</stock>
+        </variant>
+      </variants>
+      <reviews>
+        <review user="u1001" score="5">Great introduction for beginners.</review>
+        <review user="u1002" score="4">Practical examples and clear explanations.</review>
+      </reviews>
+    </product>
+    <product sku="bk-220" category-ref="cat-books" brand-ref="br-aurora" status="active">
+      <name>XQuery in Practice</name>
+      <short-description>Intermediate guide to querying XML data.</short-description>
+      <pricing>
+        <list>49.50</list>
+        <current>44.50</current>
+        <currency>USD</currency>
+      </pricing>
+      <inventory>
+        <stock>65</stock>
+        <warehouse>BLR-2</warehouse>
+      </inventory>
+      <rating>4.4</rating>
+      <variants>
+        <variant code="bk-220-pb">
+          <format>Paperback</format>
+          <stock>40</stock>
+        </variant>
+        <variant code="bk-220-eb">
+          <format>Ebook</format>
+          <stock>999</stock>
+        </variant>
+      </variants>
+      <reviews>
+        <review user="u1003" score="4">Very useful for query practice.</review>
+      </reviews>
+    </product>
+    <product sku="el-310" category-ref="cat-electronics" brand-ref="br-sonic" status="active">
+      <name>Noise Cancelling Headphones</name>
+      <short-description>Wireless over-ear headphones.</short-description>
+      <pricing>
+        <list>229.00</list>
+        <current>199.99</current>
+        <currency>USD</currency>
+      </pricing>
+      <inventory>
+        <stock>34</stock>
+        <warehouse>BLR-1</warehouse>
+      </inventory>
+      <rating>4.7</rating>
+      <variants>
+        <variant code="el-310-black">
+          <format>Black</format>
+          <stock>20</stock>
+        </variant>
+        <variant code="el-310-silver">
+          <format>Silver</format>
+          <stock>14</stock>
+        </variant>
+      </variants>
+      <reviews>
+        <review user="u1004" score="5">Comfortable and clear sound.</review>
+      </reviews>
+    </product>
+    <product sku="el-440" category-ref="cat-electronics" brand-ref="br-sonic" status="active">
+      <name>Portable Monitor</name>
+      <short-description>15-inch travel monitor for hybrid work.</short-description>
+      <pricing>
+        <list>189.00</list>
+        <current>189.00</current>
+        <currency>USD</currency>
+      </pricing>
+      <inventory>
+        <stock>18</stock>
+        <warehouse>BLR-3</warehouse>
+      </inventory>
+      <rating>4.2</rating>
+      <variants>
+        <variant code="el-440-std">
+          <format>Standard</format>
+          <stock>18</stock>
+        </variant>
+      </variants>
+      <reviews>
+        <review user="u1005" score="4">Useful for travel and demos.</review>
+      </reviews>
+    </product>
+    <product sku="of-150" category-ref="cat-office" brand-ref="br-workflow" status="active">
+      <name>Standing Desk Converter</name>
+      <short-description>Adjustable desk riser.</short-description>
+      <pricing>
+        <list>159.00</list>
+        <current>129.00</current>
+        <currency>USD</currency>
+      </pricing>
+      <inventory>
+        <stock>22</stock>
+        <warehouse>BLR-2</warehouse>
+      </inventory>
+      <rating>4.3</rating>
+      <variants>
+        <variant code="of-150-m">
+          <format>Medium</format>
+          <stock>12</stock>
+        </variant>
+        <variant code="of-150-l">
+          <format>Large</format>
+          <stock>10</stock>
+        </variant>
+      </variants>
+      <reviews>
+        <review user="u1006" score="4">Solid build and easy setup.</review>
+      </reviews>
+    </product>
+    <product sku="hm-205" category-ref="cat-home" brand-ref="br-plainspace" status="archived">
+      <name>Minimal Desk Lamp</name>
+      <short-description>Warm light lamp for focused work.</short-description>
+      <pricing>
+        <list>59.00</list>
+        <current>45.00</current>
+        <currency>USD</currency>
+      </pricing>
+      <inventory>
+        <stock>0</stock>
+        <warehouse>BLR-4</warehouse>
+      </inventory>
+      <rating>4.1</rating>
+      <variants>
+        <variant code="hm-205-white">
+          <format>White</format>
+          <stock>0</stock>
+        </variant>
+      </variants>
+      <reviews>
+        <review user="u1007" score="4">Looks great on a desk.</review>
+      </reviews>
+    </product>
+  </products>
+</catalog>

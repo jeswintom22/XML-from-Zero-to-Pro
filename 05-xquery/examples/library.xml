@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book id="b101">
+    <title>Learning XML</title>
+    <author>Samir Patel</author>
+    <price>39.99</price>
+  </book>
+  <book id="b102">
+    <title>XQuery in Practice</title>
+    <author>Ana Gomez</author>
+    <price>44.50</price>
+  </book>
+  <book id="b103">
+    <title>XML Schema Essentials</title>
+    <author>Leah Chen</author>
+    <price>52.00</price>
+  </book>
+</library>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<course-catalog>
+  <course code="CS301" department-code="CS">
+    <title>Advanced XML Systems</title>
+    <credits>4</credits>
+    <instructor-ref>i1003</instructor-ref>
+  </course>
+</course-catalog>

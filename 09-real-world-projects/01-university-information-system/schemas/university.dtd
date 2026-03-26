@@ -1,0 +1,37 @@
+<!ELEMENT university (metadata, departments, instructors, rooms, courses, students, enrollments)>
+<!ATTLIST university year CDATA #REQUIRED>
+<!ELEMENT metadata (name, term, campus-city)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT term (#PCDATA)>
+<!ELEMENT campus-city (#PCDATA)>
+<!ELEMENT departments (department+)>
+<!ELEMENT department (name, building, chair-ref)>
+<!ATTLIST department code CDATA #REQUIRED>
+<!ELEMENT building (#PCDATA)>
+<!ELEMENT chair-ref (#PCDATA)>
+<!ELEMENT instructors (instructor+)>
+<!ELEMENT instructor (name, title, email)>
+<!ATTLIST instructor id ID #REQUIRED department-code CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT rooms (room+)>
+<!ELEMENT room (building, number, capacity)>
+<!ATTLIST room id ID #REQUIRED>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT capacity (#PCDATA)>
+<!ELEMENT courses (course+)>
+<!ELEMENT course (title, credits, instructor-ref, room-ref, schedule)>
+<!ATTLIST course code CDATA #REQUIRED department-code CDATA #REQUIRED level CDATA #REQUIRED>
+<!ELEMENT credits (#PCDATA)>
+<!ELEMENT instructor-ref (#PCDATA)>
+<!ELEMENT room-ref (#PCDATA)>
+<!ELEMENT schedule (days, time)>
+<!ELEMENT days (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT students (student+)>
+<!ELEMENT student (name, year)>
+<!ATTLIST student id ID #REQUIRED program CDATA #REQUIRED>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT enrollments (enrollment+)>
+<!ELEMENT enrollment EMPTY>
+<!ATTLIST enrollment id ID #REQUIRED student-ref CDATA #REQUIRED course-ref CDATA #REQUIRED status CDATA #REQUIRED>

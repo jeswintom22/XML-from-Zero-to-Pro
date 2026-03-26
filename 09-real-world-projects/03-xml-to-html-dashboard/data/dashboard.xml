@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboard xmlns="http://example.com/dashboard" generated-on="2026-03-12">
+  <metadata>
+    <owner>Growth Analytics Team</owner>
+    <region>Global</region>
+    <default-currency>USD</default-currency>
+  </metadata>
+  <periods>
+    <period id="2025-Q3">
+      <label>2025 Q3</label>
+      <revenue>1045000</revenue>
+      <orders>4310</orders>
+      <conversion-rate>0.036</conversion-rate>
+      <new-customers>780</new-customers>
+      <top-region>North America</top-region>
+    </period>
+    <period id="2025-Q4">
+      <label>2025 Q4</label>
+      <revenue>1280000</revenue>
+      <orders>5420</orders>
+      <conversion-rate>0.042</conversion-rate>
+      <new-customers>920</new-customers>
+      <top-region>Europe</top-region>
+    </period>
+    <period id="2026-Q1">
+      <label>2026 Q1</label>
+      <revenue>1355000</revenue>
+      <orders>5660</orders>
+      <conversion-rate>0.044</conversion-rate>
+      <new-customers>980</new-customers>
+      <top-region>Asia Pacific</top-region>
+    </period>
+    <period id="2026-Q2">
+      <label>2026 Q2</label>
+      <revenue>1420000</revenue>
+      <orders>5895</orders>
+      <conversion-rate>0.047</conversion-rate>
+      <new-customers>1040</new-customers>
+      <top-region>Asia Pacific</top-region>
+    </period>
+  </periods>
+</dashboard>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://example.com/dashboard"
+  xmlns="http://example.com/dashboard"
+  elementFormDefault="qualified">
+  <xs:element name="dashboard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="metadata">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="owner" type="xs:string" />
+              <xs:element name="region" type="xs:string" />
+              <xs:element name="default-currency" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="periods">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="period" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="label" type="xs:string" />
+                    <xs:element name="revenue" type="xs:decimal" />
+                    <xs:element name="orders" type="xs:nonNegativeInteger" />
+                    <xs:element name="conversion-rate" type="xs:decimal" />
+                    <xs:element name="new-customers" type="xs:nonNegativeInteger" />
+                    <xs:element name="top-region" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="generated-on" type="xs:date" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

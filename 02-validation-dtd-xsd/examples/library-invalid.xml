@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book id="b101">
+    <title>Broken Library Record</title>
+    <author>Samir Patel</author>
+    <year>1890</year>
+    <price>-5</price>
+  </book>
+</library>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <product sku="bk-101" status="active">
+    <title>Learning XML</title>
+    <category>Books</category>
+    <price currency="USD">39.99</price>
+  </product>
+  <product sku="el-205" status="active">
+    <title>Noise Cancelling Headphones</title>
+    <category>Electronics</category>
+    <price currency="USD">199.99</price>
+  </product>
+  <product sku="bk-220" status="archived">
+    <title>XQuery in Practice</title>
+    <category>Books</category>
+    <price currency="USD">44.50</price>
+  </product>
+</catalog>

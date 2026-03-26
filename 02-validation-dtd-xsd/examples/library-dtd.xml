@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library SYSTEM "library.dtd">
+<library>
+  <book id="b101" category="xml">
+    <title>Learning XML</title>
+    <author>Samir Patel</author>
+    <year>2025</year>
+    <price>39.99</price>
+  </book>
+  <book id="b102" category="integration">
+    <title>Enterprise Data Pipelines</title>
+    <author>Ana Gomez</author>
+    <year>2024</year>
+    <price>49.00</price>
+  </book>
+</library>

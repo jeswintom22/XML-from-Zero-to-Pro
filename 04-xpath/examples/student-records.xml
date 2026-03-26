@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student id="s1001" level="undergraduate">
+    <name>Arjun Shah</name>
+    <major>Computer Science</major>
+    <credits>72</credits>
+  </student>
+  <student id="s1002" level="graduate">
+    <name>Nina Roy</name>
+    <major>Data Engineering</major>
+    <credits>18</credits>
+  </student>
+  <student id="s1003" level="undergraduate">
+    <name>Rehan Ali</name>
+    <major>Mathematics</major>
+    <credits>84</credits>
+  </student>
+</students>

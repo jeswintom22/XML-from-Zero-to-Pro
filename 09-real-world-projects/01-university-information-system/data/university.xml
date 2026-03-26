@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university year="2026">
+  <metadata>
+    <name>North Valley University</name>
+    <term>Spring 2026</term>
+    <campus-city>Bengaluru</campus-city>
+  </metadata>
+  <departments>
+    <department code="CS">
+      <name>Computer Science</name>
+      <building>Innovation Hall</building>
+      <chair-ref>i1001</chair-ref>
+    </department>
+    <department code="DS">
+      <name>Data Science</name>
+      <building>Analytics Center</building>
+      <chair-ref>i1002</chair-ref>
+    </department>
+    <department code="ENG">
+      <name>English</name>
+      <building>Language Block</building>
+      <chair-ref>i1005</chair-ref>
+    </department>
+    <department code="BUS">
+      <name>Business Administration</name>
+      <building>Commerce Tower</building>
+      <chair-ref>i1006</chair-ref>
+    </department>
+  </departments>
+  <instructors>
+    <instructor id="i1001" department-code="CS">
+      <name>Maya Rao</name>
+      <title>Professor</title>
+      <email>maya.rao@northvalley.edu</email>
+    </instructor>
+    <instructor id="i1002" department-code="DS">
+      <name>Daniel Kim</name>
+      <title>Professor</title>
+      <email>daniel.kim@northvalley.edu</email>
+    </instructor>
+    <instructor id="i1003" department-code="CS">
+      <name>Leena Sharma</name>
+      <title>Associate Professor</title>
+      <email>leena.sharma@northvalley.edu</email>
+    </instructor>
+    <instructor id="i1004" department-code="DS">
+      <name>Omar Yusuf</name>
+      <title>Assistant Professor</title>
+      <email>omar.yusuf@northvalley.edu</email>
+    </instructor>
+    <instructor id="i1005" department-code="ENG">
+      <name>Rachel Scott</name>
+      <title>Professor</title>
+      <email>rachel.scott@northvalley.edu</email>
+    </instructor>
+    <instructor id="i1006" department-code="BUS">
+      <name>Arun Das</name>
+      <title>Professor</title>
+      <email>arun.das@northvalley.edu</email>
+    </instructor>
+  </instructors>
+  <rooms>
+    <room id="r101">
+      <building>Innovation Hall</building>
+      <number>101</number>
+      <capacity>35</capacity>
+    </room>
+    <room id="r102">
+      <building>Innovation Hall</building>
+      <number>204</number>
+      <capacity>48</capacity>
+    </room>
+    <room id="r201">
+      <building>Analytics Center</building>
+      <number>310</number>
+      <capacity>42</capacity>
+    </room>
+    <room id="r301">
+      <building>Language Block</building>
+      <number>115</number>
+      <capacity>30</capacity>
+    </room>
+    <room id="r401">
+      <building>Commerce Tower</building>
+      <number>220</number>
+      <capacity>55</capacity>
+    </room>
+  </rooms>
+  <courses>
+    <course code="CS101" department-code="CS" level="beginner">
+      <title>Introduction to Programming</title>
+      <credits>3</credits>
+      <instructor-ref>i1003</instructor-ref>
+      <room-ref>r101</room-ref>
+      <schedule>
+        <days>Mon,Wed</days>
+        <time>09:00</time>
+      </schedule>
+    </course>
+    <course code="CS301" department-code="CS" level="advanced">
+      <title>Advanced XML Systems</title>
+      <credits>4</credits>
+      <instructor-ref>i1001</instructor-ref>
+      <room-ref>r102</room-ref>
+      <schedule>
+        <days>Tue,Thu</days>
+        <time>11:00</time>
+      </schedule>
+    </course>
+    <course code="CS330" department-code="CS" level="intermediate">
+      <title>Data Structures</title>
+      <credits>4</credits>
+      <instructor-ref>i1003</instructor-ref>
+      <room-ref>r102</room-ref>
+      <schedule>
+        <days>Mon,Fri</days>
+        <time>14:00</time>
+      </schedule>
+    </course>
+    <course code="DS210" department-code="DS" level="intermediate">
+      <title>Statistics for Analytics</title>
+      <credits>3</credits>
+      <instructor-ref>i1002</instructor-ref>
+      <room-ref>r201</room-ref>
+      <schedule>
+        <days>Tue,Thu</days>
+        <time>10:00</time>
+      </schedule>
+    </course>
+    <course code="DS420" department-code="DS" level="advanced">
+      <title>Machine Learning Pipelines</title>
+      <credits>4</credits>
+      <instructor-ref>i1004</instructor-ref>
+      <room-ref>r201</room-ref>
+      <schedule>
+        <days>Wed,Fri</days>
+        <time>15:00</time>
+      </schedule>
+    </course>
+    <course code="ENG201" department-code="ENG" level="intermediate">
+      <title>Technical Writing</title>
+      <credits>2</credits>
+      <instructor-ref>i1005</instructor-ref>
+      <room-ref>r301</room-ref>
+      <schedule>
+        <days>Tue</days>
+        <time>13:00</time>
+      </schedule>
+    </course>
+    <course code="BUS105" department-code="BUS" level="beginner">
+      <title>Principles of Management</title>
+      <credits>3</credits>
+      <instructor-ref>i1006</instructor-ref>
+      <room-ref>r401</room-ref>
+      <schedule>
+        <days>Mon,Wed</days>
+        <time>10:30</time>
+      </schedule>
+    </course>
+  </courses>
+  <students>
+    <student id="s1001" program="BTech CS">
+      <name>Arjun Shah</name>
+      <year>2</year>
+    </student>
+    <student id="s1002" program="BTech CS">
+      <name>Nina Roy</name>
+      <year>3</year>
+    </student>
+    <student id="s1003" program="MSc DS">
+      <name>Rehan Ali</name>
+      <year>1</year>
+    </student>
+    <student id="s1004" program="BA English">
+      <name>Isha Kapoor</name>
+      <year>2</year>
+    </student>
+    <student id="s1005" program="MBA">
+      <name>Karan Mehta</name>
+      <year>1</year>
+    </student>
+    <student id="s1006" program="MSc DS">
+      <name>Fatima Noor</name>
+      <year>2</year>
+    </student>
+  </students>
+  <enrollments>
+    <enrollment id="e001" student-ref="s1001" course-ref="CS101" status="active" />
+    <enrollment id="e002" student-ref="s1001" course-ref="CS330" status="active" />
+    <enrollment id="e003" student-ref="s1002" course-ref="CS301" status="active" />
+    <enrollment id="e004" student-ref="s1002" course-ref="DS210" status="active" />
+    <enrollment id="e005" student-ref="s1003" course-ref="DS210" status="active" />
+    <enrollment id="e006" student-ref="s1003" course-ref="DS420" status="active" />
+    <enrollment id="e007" student-ref="s1004" course-ref="ENG201" status="active" />
+    <enrollment id="e008" student-ref="s1005" course-ref="BUS105" status="active" />
+    <enrollment id="e009" student-ref="s1006" course-ref="DS420" status="active" />
+    <enrollment id="e010" student-ref="s1006" course-ref="CS301" status="active" />
+  </enrollments>
+</university>

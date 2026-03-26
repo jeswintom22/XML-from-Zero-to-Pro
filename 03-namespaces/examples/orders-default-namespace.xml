@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders xmlns="http://example.com/orders">
+  <order id="o1001">
+    <customer>Priya Menon</customer>
+    <total currency="INR">2400</total>
+  </order>
+</orders>

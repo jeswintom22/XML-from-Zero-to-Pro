@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+  <name>Northwind Learning Labs</name>
+  <location city="Bengaluru" country="India" />
+  <departments>
+    <department id="d01">Training</department>
+    <department id="d02">Research</department>
+    <department id="d03">Support</department>
+  </departments>
+</company>

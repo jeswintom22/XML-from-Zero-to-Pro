@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inv:inventory
+  xmlns:inv="http://example.com/inventory"
+  xmlns:loc="http://example.com/location">
+  <inv:item sku="bk-101">
+    <inv:name>Learning XML</inv:name>
+    <inv:stock>24</inv:stock>
+    <loc:warehouse code="BLR-1">
+      <loc:city>Bengaluru</loc:city>
+    </loc:warehouse>
+  </inv:item>
+</inv:inventory>

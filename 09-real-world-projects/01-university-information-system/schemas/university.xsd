@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="university">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="metadata">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="term" type="xs:string" />
+              <xs:element name="campus-city" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="departments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="department" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="building" type="xs:string" />
+                    <xs:element name="chair-ref" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="code" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="instructors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="instructor" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="title" type="xs:string" />
+                    <xs:element name="email" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                  <xs:attribute name="department-code" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rooms">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="room" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="building" type="xs:string" />
+                    <xs:element name="number" type="xs:string" />
+                    <xs:element name="capacity" type="xs:positiveInteger" />
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="courses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="course" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="title" type="xs:string" />
+                    <xs:element name="credits" type="xs:positiveInteger" />
+                    <xs:element name="instructor-ref" type="xs:string" />
+                    <xs:element name="room-ref" type="xs:string" />
+                    <xs:element name="schedule">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="days" type="xs:string" />
+                          <xs:element name="time" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="code" type="xs:string" use="required" />
+                  <xs:attribute name="department-code" type="xs:string" use="required" />
+                  <xs:attribute name="level" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="students">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="student" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="year" type="xs:positiveInteger" />
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                  <xs:attribute name="program" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="enrollments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="enrollment" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="id" type="xs:ID" use="required" />
+                  <xs:attribute name="student-ref" type="xs:string" use="required" />
+                  <xs:attribute name="course-ref" type="xs:string" use="required" />
+                  <xs:attribute name="status" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="year" type="xs:gYear" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

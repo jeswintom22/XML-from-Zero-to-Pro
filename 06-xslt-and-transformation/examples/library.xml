@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book>
+    <title>Learning XML</title>
+    <author>Samir Patel</author>
+    <price>39.99</price>
+  </book>
+  <book>
+    <title>XSLT in Practice</title>
+    <author>Ana Gomez</author>
+    <price>47.00</price>
+  </book>
+</library>

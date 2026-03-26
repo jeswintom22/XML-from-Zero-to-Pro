@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note priority="high">
+  <to>Ravi</to>
+  <from>Anika</from>
+  <subject>XML basics</subject>
+  <body>Remember to close every tag.</body>
+</note>
